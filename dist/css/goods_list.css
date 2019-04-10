@@ -1,0 +1,135 @@
+html,
+body,
+.pyg_view {
+  height: 100%;
+}
+img {
+  width: 100%;
+}
+body {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.pyg_view {
+  overflow: scroll;
+}
+.pyg_header {
+  padding: 5px;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+.pyg_footer {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pyg_footer a {
+  color: #000;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.pyg_footer a i {
+  font-size: 18px;
+}
+.pyg_view {
+  position: relative;
+}
+.list_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #0094ff;
+}
+.list_header span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+.list_header i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  font-size: 20px;
+}
+.pyg_view .list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pyg_view .list li {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.pyg_view .list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+.pyg_view .list li a .item_left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pyg_view .list li a .item_left img {
+  width: 70%;
+}
+.pyg_view .list li a .item_right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.pyg_view .list li a .item_right .goods_name {
+  color: #666;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pyg_view .list li a .item_right .goods_price {
+  color: red;
+}
+
+/*# sourceMappingURL=goods_list.css.map */

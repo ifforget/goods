@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css" />
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/goods_list.css" />
+</head>
+<body>
+    <div class="list_header">
+        <span>搜索</span>
+        <i class="fa fa-search"></i>
+    </div>
+   <div class="pyg_view">
+      <div>
+        <ul class="list"></ul>
+      </div>
+    </div>
+
+    <footer class="pyg_footer">
+    <a href="index.html">
+      <i class="fa fa-home"></i>
+      <div class="linkname">首页</div>
+    </a>
+    <a href="category.html">
+      <i class="fa fa-list-ul"></i>
+      <div class="linkname">分类</div>
+    </a>
+    <a href="javascript:;">
+      <i class="fa fa-shopping-cart"></i>
+      <div class="linkname">购物车</div>
+    </a>
+    <a href="register.html">
+      <i class="fa fa-user"></i>
+      <div class="linkname">注册</div>
+    </a>
+  </footer>
+</body>
+ <!-- 模板引擎 开始 -->
+ <script id="mainTpl" type="text/html">
+    {{each arr item  index}}
+    <li class="list">
+      <a href="goods_detail.html?goods_id={{item.goods_id}}">
+        <div class="item_left">
+          <img src="{{item.goods_small_logo}}" alt="">
+        </div>
+        <div class="item_right">
+          <!-- 商品名称 -->
+          <div class="goods_name">
+         {{item.goods_name}}
+                </div>
+          <!-- 商品的价格 -->
+          <div class="goods_price">
+            ￥{{item.goods_price}}
+          </div>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+  </script>
+  <!-- 模板引擎 结束 -->
+
+</html>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/goods_list.js"></script>

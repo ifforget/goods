@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/goods_detail.css">
+</head>
+
+<body>
+    <header id="header" class="mui-bar mui-bar-nav">
+    <h1 class="mui-title">商品详细</h1>
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+  </header>
+    <!-- 内容部分 -->
+    <div class="pyg_view">
+
+
+    </div>
+
+    <!-- 底部 -->
+    <div class="pyg_footer_tool">
+        <a href="javacript:;">
+            <i class="fa fa-weixin"></i>
+            <div class="contact_name">微信</div>
+        </a>
+        <a href="javacript:;">
+            <i class="fa fa-weixin"></i>
+            <div class="contact_name">微信</div>
+        </a>
+        <a href="javascript:;" class="buy_btn">
+            立即购买
+        </a>
+        <a href="javascript:;" class="shoopping_car_btn">
+            加人购物车
+        </a>
+    </div>
+
+
+</body>
+<!--模板引擎-->
+<script type="text/html" id="main">
+    <div class="mui-slider">
+            <div class="mui-slider-group mui-slider-loop">
+              <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="{{pics[pics.length-1].pics_mid_url}}" /></a></div>
+                {{each pics item index}}
+                
+              <div class="mui-slider-item"><a href="#"><img src="{{item.pics_mid_url}}" /></a></div>
+              {{/each}}
+              <div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="{{pics[0].pics_mid_url}}" /></a></div>
+            </div>
+        
+          <!-- 索引 -->
+          <div class="mui-slider-indicator">
+                {{each  pics  item  index}}
+                <div class="mui-indicator  {{index==0?'mui-active':''}}"></div>
+                {{/each}}
+              </div>
+          </div> 
+  </div>
+
+  <!-- 商品名称 -->
+  <div class="gd_goods_name">
+      {{goods_name}}
+  </div>
+  <!-- 商品的代价 -->
+  <div class="gd_goods_price">
+      ¥{{goods_price}}
+  </div>
+  <!-- 物流 -->
+  <div class="logistics">
+        <ul>
+                <li> <span>已选</span> <span>白色</span> </li>
+                <li> <span>促销</span> <span>是</span> </li>
+                <li> <span>送至</span> <span>上海市</span> </li>
+                <li> <span>运费</span> <span>免运费</span> </li>
+              </ul>
+  </div>
+  <!-- tab栏数据 详情 -->
+  <div class="gd_info_row">
+        <!-- 标题 -->
+        <div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item1">图文详情 </a>
+					<a class="mui-control-item" href="#item2"> 规格参数 </a>
+			
+				</div>
+  <!-- 内容 -->
+  <div>
+        <div id="item1" class="mui-control-content  mui-active">
+          <!-- {{goods_introduce}} -->
+          <!-- 模板引擎直接提供了 字符串转标签的功能 只要在 括号里面加一个 @ 就可以了！！ -->
+          {{@  goods_introduce}}
+        </div>
+          <div id="item2" class="mui-control-content">
+            <ul>
+              {{each attrs item index}}
+              <li>
+                <div class="gi_title">{{item.attr_name.split("-")[0]}}</div>
+                <div class="gi_content">
+                  <span>{{item.attr_name.split("-")[1]}}</span>
+         <span>{{item.attr_value}}</span>
+                </div>
+              </li>
+              {{/each}}
+           
+            </ul>
+          </div>
+         
+        </div>
+      </div> 
+
+
+   
+</script>
+
+</html>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/goods_detail.js"></script>

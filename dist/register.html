@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>28-注册</title>
+  <link rel="stylesheet" href="./lib/mui/css/mui.css">
+  <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/register.css">
+ 
+</head>
+<body>
+    <header id="header" class="mui-bar mui-bar-nav">
+    <h1 class="mui-title">注册</h1>
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+  </header>
+
+  <div class="pyg_view">
+      <form class="mui-input-group">
+          <div class="mui-input-row"> <label>手机</label> <input value="13555566699"  name="mobile" type="text" class="mui-input-clear" placeholder="请输入手机"> </div>
+          <div class="mui-input-row vcode_row"> <label>验证码</label> <input name="code" type="text" class="" placeholder="验证码"> <button type="button" class=" get_code_btn mui-btn mui-btn-primary">获取验证码</button></div>
+          <div class="mui-input-row"> <label>邮箱</label> <input name="email" type="text" class="mui-input-clear" placeholder="请输入用户名"> </div>
+          <div class="mui-input-row"> <label>密码</label> <input name="pwd" type="password" class="mui-input-password" placeholder="请输入密码"> </div>
+          <div class="mui-input-row"> <label>确认密码</label> <input name="pwd2"  type="password" class="mui-input-password" placeholder="请输入密码"> </div>
+          <div class="mui-input-row mui-radio"> <label>女</label> <input value="女" name="gender" type="radio" checked> </div>
+          <div class="mui-input-row mui-radio"> <label>男</label> <input value="男" name="gender" type="radio"> </div>
+      </form>
+
+      <!-- 自己的登录注册按钮 -->
+      <div class="register_tool">
+        <a href="login.html" class="mui-btn mui-btn-primary mui-btn-outlined">登录</a>
+        <a href="javascript:;" class="register_btn mui-btn mui-btn-primary ">注册</a>
+    </div>
+  </div>
+ 
+  <footer class="pyg_footer">
+    <a href="index.html">
+      <i class="fa fa-home"></i>
+      <div class="linkname">首页</div>
+    </a>
+    <a href="category.html">
+      <i class="fa fa-list-ul"></i>
+      <div class="linkname">分类</div>
+    </a>
+    <a href="javascript:;">
+      <i class="fa fa-shopping-cart"></i>
+      <div class="linkname">购物车</div>
+    </a>
+    <a href="register.html">
+      <i class="fa fa-user"></i>
+      <div class="linkname">注册</div>
+    </a>
+  </footer>
+
+
+</body>
+
+
+
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/register.js"></script>
+</html>

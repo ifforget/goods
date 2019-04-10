@@ -1,0 +1,110 @@
+html,
+body,
+.pyg_view {
+  height: 100%;
+}
+img {
+  width: 100%;
+}
+body {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.pyg_view {
+  overflow: scroll;
+}
+.pyg_header {
+  padding: 5px;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+.pyg_footer {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pyg_footer a {
+  color: #000;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 5px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.pyg_footer a i {
+  font-size: 18px;
+}
+.pyg_view {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: none;
+  overflow: hidden;
+}
+.pyg_view .left {
+  width: 80px;
+  background-color: #ccc;
+}
+.pyg_view .left > .left_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pyg_view .left > .left_list li {
+  display: block;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  padding: 2px;
+}
+.pyg_view .left .active {
+  background: #fff;
+}
+.pyg_view .bs-popover-right {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #fff;
+}
+.pyg_view .bs-popover-right .right_list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.pyg_view .bs-popover-right .right_list li {
+  display: block;
+  width: 32%;
+}
+.pyg_view .bs-popover-right .right_list li p {
+  font-size: 14px;
+  background: #fff;
+  text-align: center;
+}
+.pyg_view .bs-popover-right .right_list li img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=category.css.map */

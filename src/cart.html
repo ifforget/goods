@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>28-购物车</title>
+    <!-- 验证权限 -->
+    <script src="./js/checkPermission.js"></script>
+
+    <link rel="stylesheet" href="./lib/mui/css/mui.css" />
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+  <!-- <body class="loadding"> -->
+  <body id="pyg_body" class="">
+    <header id="header" class="mui-bar mui-bar-nav">
+      <button class=" delete_btn mui-btn mui-btn-blue  mui-pull-left mui-btn-outlined">
+        删除
+      </button>
+      <h1 class="mui-title">购物车</h1>
+      <button class=" edit_btn mui-btn mui-btn-blue  mui-pull-right mui-btn-outlined">
+        编辑
+      </button>
+    </header>
+    <div class="pyg_view">
+      <!-- 地址 -->
+      <div class="cart_addr">
+        <div class="cart_addr_title">配送地址</div>
+        <div class="cart_addr_content">
+          <div class="cac_left">
+            <i class="fa  fa-map-marker"></i>
+          </div>
+          <div class="cac_right">
+            <div>默认地址</div>
+            <div>中国台湾 钓鱼岛</div>
+          </div>
+        </div>
+      </div>
+      <!-- 总价 -->
+      <div class="price_row">
+        <div class="price_row_title">总价</div>
+        <div class="price_row_content">
+          <div class="prc_left">
+            总价: <span>￥ <i class="total_price">获取中 。。。。</i></span>
+          </div>
+          <div class="prc_right">
+            <a class="o_create_btn" href="javascript:;">生成订单</a>
+          </div>
+        </div>
+      </div>
+      <!-- 订单 -->
+      <div class="order_row">
+        <div class="order_row_title">订单</div>
+        <div class="order_row_content">
+          <ul class="order_list"></ul>
+        </div>
+      </div>
+    </div>
+
+    @@include("pyg_footer.html")
+  </body>
+  <!-- 模板引擎 开始 -->
+  <script id="mainTpl" type="text/html">
+    {{each goodsObj value key}}
+
+    <li data-obj='{{value}}'>
+        <!-- 复选框 -->
+        <div class="ol_chk_wrap">
+          <div class="mui-input-row mui-checkbox">
+            <input class="ol_chk" type="checkbox" />
+          </div>
+        </div>
+        <!-- 图片 -->
+        <div class="ol_img">
+          <img
+            src="{{value.goods_small_logo}}"
+            alt=""
+          />
+        </div>
+        <!-- 商品信息 -->
+        <div class="ol_info">
+          <!-- 商品的名称 -->
+          <!-- <div class="goods_name mui-ellipsis-2"> -->
+          <div class="goods_name ">
+          {{value.goods_name}}
+          </div>
+          <!-- 数字输入框 -->
+          <div class="goods_num_tool">
+            <div class="mui-numbox" data-numbox-step='1' data-numbox-min='1' data-numbox-max='{{value.goods_number}}'>
+              <!-- "-"按钮，点击可减小当前数值 -->
+              <button class="mui-btn mui-numbox-btn-minus" type="button">
+                -
+              </button>
+              <input  value="{{value.amount}}" class="mui-numbox-input" type="number" />
+              <!-- "+"按钮，点击可增大当前数值 -->
+              <button class="mui-btn mui-numbox-btn-plus" type="button">
+                +
+              </button>
+            </div>
+          </div>
+          <!-- 单价 -->
+          <div class="goods_price">￥{{value.goods_price}}</div>
+        </div>
+      </li>
+    
+    {{/each}}
+  </script>
+  <!-- 模板引擎 结束 -->
+  <script src="./lib/mui/js/mui.js"></script>
+  <script src="./lib/zepto/zepto.js"></script>
+  <script src="./lib/arttemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/cart.js"></script>
+</html>

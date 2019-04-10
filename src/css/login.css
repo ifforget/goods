@@ -1,0 +1,54 @@
+html,
+body,
+.pyg_view {
+  height: 100%;
+}
+img {
+  width: 100%;
+}
+body {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.pyg_view {
+  overflow: scroll;
+}
+.pyg_header {
+  padding: 5px;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+.pyg_footer {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+.pyg_footer a {
+  color: #000;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 5px;
+  flex: 1;
+}
+.pyg_footer a i {
+  font-size: 18px;
+}
+.btm_tool {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.btm_tool a {
+  width: 100%;
+  margin: 10px;
+  height: 33px;
+}

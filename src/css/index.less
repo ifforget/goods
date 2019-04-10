@@ -1,0 +1,64 @@
+@import "common.less";
+
+
+
+// 分类菜单
+.pyg_cates{
+  display: flex;
+  a{
+    flex: 1;
+    text-align: center;
+    img{
+      width: 80%;
+    }
+  }
+}
+
+
+// 商品的列表
+.pyg_goodslist{
+  padding: 5px;
+  // 省钱  必逛
+  .goods_item{
+    // 大图片
+    .group_img{
+  
+    }
+    // 小商品列表
+    .goods{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      li{
+        width: 49%;
+        background-color: #fff;
+        padding: 5px;
+        margin-bottom: 5px;
+        // 商品的详情
+        .goods_detail{
+          .goods_small_logo{}
+          .goods_name{
+            color: #000;
+            font-size: 14px;
+            height: 40px;
+            overflow: hidden;
+          }
+          .goods_price{
+            color: red;
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+        // 类似 的商品
+        .goods_similar{
+          display: block;
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,160 @@
+html,
+body,
+.pyg_view {
+  height: 100%;
+}
+img {
+  width: 100%;
+}
+body {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.pyg_view {
+  overflow: scroll;
+}
+.pyg_header {
+  padding: 5px;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+.pyg_footer {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+.pyg_footer a {
+  color: #000;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 5px;
+  flex: 1;
+}
+.pyg_footer a i {
+  font-size: 18px;
+}
+.pyg_view {
+  padding: 10px;
+}
+.cart_addr .cart_addr_title {
+  color: #666;
+  font-size: 14px;
+}
+.cart_addr .cart_addr_content {
+  background-color: #fff;
+  display: flex;
+  padding: 10px;
+}
+.cart_addr .cart_addr_content .cac_left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.cart_addr .cart_addr_content .cac_right {
+  flex: 5;
+}
+.cart_addr .cart_addr_content .cac_right div:nth-child(1) {
+  font-size: 14px;
+}
+.cart_addr .cart_addr_content .cac_right div:nth-child(2) {
+  font-size: 12px;
+  color: #666;
+}
+.price_row {
+  margin-top: 20px;
+}
+.price_row .price_row_title {
+  color: #666;
+  font-size: 14px;
+}
+.price_row .price_row_content {
+  background-color: #fff;
+  display: flex;
+  padding: 10px;
+}
+.price_row .price_row_content .prc_left {
+  flex: 4;
+}
+.price_row .price_row_content .prc_left span {
+  color: red;
+}
+.price_row .price_row_content .prc_left span i {
+  font-size: 23px;
+  font-style: normal;
+}
+.price_row .price_row_content .prc_right {
+  flex: 2;
+}
+.order_row {
+  margin-top: 20px;
+}
+.order_row .order_row_title {
+  color: #666;
+  font-size: 14px;
+}
+.order_row .order_row_content {
+  background-color: #fff;
+  padding: 10px;
+}
+.order_row .order_row_content .order_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.order_row .order_row_content .order_list li {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.order_row .order_row_content .order_list li .ol_chk_wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order_row .order_row_content .order_list li .ol_chk_wrap .ol_chk {
+  position: static;
+}
+.order_row .order_row_content .order_list li .ol_img {
+  flex: 2;
+}
+.order_row .order_row_content .order_list li .ol_info {
+  overflow: hidden;
+  padding-left: 5px;
+  flex: 4;
+}
+.order_row .order_row_content .order_list li .ol_info .goods_name {
+  font-size: 13px;
+  color: #666;
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.order_row .order_row_content .order_list li .ol_info .goods_price {
+  padding: 3px;
+  color: red;
+}
+#pyg_body .delete_btn,
+#pyg_body .ol_chk_wrap,
+#pyg_body .goods_num_tool {
+  display: none;
+}
+#pyg_body.edit_status .delete_btn,
+#pyg_body.edit_status .ol_chk_wrap,
+#pyg_body.edit_status .goods_num_tool {
+  display: block;
+}

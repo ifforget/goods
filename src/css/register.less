@@ -1,0 +1,38 @@
+@import "category.less";
+
+.pyg_view{
+    padding: 10px;
+    position: relative;
+    form{
+      // 验证码的div
+      .vcode_row{
+        // 获取验证码的按钮
+        position: relative;
+        .get_code_btn{
+     
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          // 如何让按钮的宽度 变成 默认值  自动根据内容撑开标签
+          width: auto;
+          padding: 6px;
+        }
+      }
+      
+    }
+  
+    // 自己的工具栏按钮
+    .register_tool{
+      position: absolute;
+      width: 96%;
+      top:300px;
+      display: flex;
+
+      justify-content: space-between;
+      a{
+        flex:1;
+        margin: 0 10px;
+        width: 40%;
+      }
+    }
+  }

@@ -1,0 +1,143 @@
+@import "common.less";
+
+.pyg_view {
+  padding: 10px;
+}
+// 地址
+.cart_addr {
+  .cart_addr_title {
+    color: #666;
+    font-size: 14px;
+  }
+  .cart_addr_content {
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+    .cac_left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+    }
+    .cac_right {
+      flex: 5;
+      div:nth-child(1) {
+        font-size: 14px;
+      }
+      div:nth-child(2) {
+        font-size: 12px;
+        color: #666;
+      }
+    }
+  }
+}
+
+// 总价
+.price_row {
+  margin-top: 20px;
+  .price_row_title {
+    color: #666;
+    font-size: 14px;
+  }
+  .price_row_content {
+    background-color: #fff;
+    display: flex;
+    padding: 10px;
+    .prc_left {
+      flex: 4;
+      span {
+        color: red;
+        i {
+          font-size: 23px;
+          font-style: normal;
+        }
+      }
+    }
+    .prc_right {
+      flex: 2;
+      a {
+      }
+    }
+  }
+}
+
+// 订单
+.order_row {
+  margin-top: 20px;
+  .order_row_title {
+    color: #666;
+    font-size: 14px;
+  }
+  .order_row_content {
+    background-color: #fff;
+    padding: 10px;
+    .order_list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        // 复选框
+        .ol_chk_wrap {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .ol_chk {
+            position: static;
+          }
+        }
+        // 图片
+        .ol_img {
+          flex: 2;
+        }
+        // 商品信息
+        .ol_info {
+          overflow: hidden;
+          padding-left: 5px;
+          flex: 4;
+          .goods_name {
+            font-size: 13px;
+            color: #666;
+            // text-overflow: ellipsis;
+
+            display: -webkit-box;
+            overflow: hidden;
+            white-space: normal !important;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+          .goods_num_tool {
+          }
+          .goods_price {
+            padding: 3px;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 一开始 下面的标签应该是隐藏
+#pyg_body {
+  .delete_btn,
+  .ol_chk_wrap,
+  .goods_num_tool {
+    display: none;
+  }
+}
+
+// 显示标签
+// body.edit_status{
+#pyg_body.edit_status{
+  .delete_btn,
+  .ol_chk_wrap,
+  .goods_num_tool {
+    display: block;
+  }
+}

@@ -1,0 +1,66 @@
+@import "common.less";
+
+
+
+
+.pyg_view{
+    width: 100%;
+    display:flex;
+    overflow: none;
+    overflow: hidden;
+    .left{
+        width: 80px;
+        background-color: #ccc;
+        // overflow: scroll;
+        >.left_list{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                display: block;
+                text-align: center;
+                color:#000;
+                font-size: 14px;
+                padding: 2px;
+            }
+       
+
+        }    
+          .active{
+            background: #fff;
+        }
+       
+    }
+    .bs-popover-right{
+        width: 100%;
+        flex:1;
+        // overflow: scroll;
+        background-color: #fff;
+       
+        .right_list{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: space-between;
+           
+            li{
+                display: block;
+                // height: 200px;
+                width: 32%;
+                p{
+                    font-size: 14px;
+                    background: #fff;
+                    text-align: center;
+                   
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        
+    }
+}

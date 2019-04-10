@@ -1,0 +1,78 @@
+@import "common.less";
+
+
+.pyg_view{
+    position: relative;
+}
+
+.list_header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #0094ff;
+    span{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: #fff;
+    }
+    i{
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+  
+  
+  .pyg_view{
+    .list{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li{
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        a{
+          display: flex;
+          padding: 10px;
+          .item_left{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+              width: 70%;
+            }
+          }
+          .item_right{
+            flex: 1;
+            // 用来解决左边图片 被挤压的问题
+            overflow: hidden;
+  
+            display: flex;
+            // 主轴方向
+            flex-direction: column;
+            justify-content: space-around;
+  
+            .goods_name{
+              color: #666;
+              font-size: 14px;
+  
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .goods_price{
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }

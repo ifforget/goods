@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "group_img": "http://image4.suning.cn/uimg/cms/img/149559219946350066.png",
+      "goods": [
+        {
+          "goods_id": 33464,
+          "goods_name": "荷兰乳牛 学生配方奶粉400克袋装 青少年奶粉 丰富钙铁锌硒 新西兰进口奶源",
+          "goods_price": 28,
+          "goods_big_logo": "http://image1.suning.cn/uimg/b2c/newcatentries/0070078359-000000000171313290_1_800x800.jpg",
+          "goods_small_logo": "http://image1.suning.cn/uimg/b2c/newcatentries/0070078359-000000000171313290_1_400x400.jpg",
+          "cat_id": 372
+        }
+      ]
+    }
+  ],
+  "meta": { "msg": "获取成功", "status": 200 }
+}

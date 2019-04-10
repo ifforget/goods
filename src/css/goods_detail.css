@@ -1,0 +1,121 @@
+html,
+body,
+.pyg_view {
+  height: 100%;
+}
+img {
+  width: 100%;
+}
+body {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.pyg_view {
+  overflow: scroll;
+}
+.pyg_header {
+  padding: 5px;
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+}
+.pyg_footer {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+}
+.pyg_footer a {
+  color: #000;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 5px;
+  flex: 1;
+}
+.pyg_footer a i {
+  font-size: 18px;
+}
+.pyg_footer_tool {
+  display: flex;
+  background-color: #fff;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #666;
+  text-align: center;
+}
+.pyg_footer_tool a {
+  flex: 1;
+}
+.pyg_footer_tool a:nth-child(-n+2) {
+  color: #333;
+}
+.pyg_footer_tool a:nth-child(-n+2) .contact_name {
+  font-size: 12px;
+}
+.pyg_footer_tool a:nth-last-child(-n+2) {
+  line-height: 45px;
+  font-size: 14px;
+  color: #fff;
+}
+.pyg_footer_tool .buy_btn {
+  background-color: #f0ad4e;
+}
+.pyg_footer_tool .shoopping_car_btn {
+  background-color: #dd524d;
+}
+.pyg_view {
+  background-color: #fff;
+  padding: 0 10px;
+}
+.pyg_view .gd_goods_name {
+  font-size: 14px;
+}
+.pyg_view .gd_goods_price {
+  color: red;
+  font-size: 20px;
+}
+.pyg_view .logistics ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pyg_view .logistics ul li {
+  display: flex;
+  font-size: 13px;
+  border-bottom: 1px solid #666;
+}
+.pyg_view .logistics ul li span:nth-child(1) {
+  flex: 1;
+  color: #ccc;
+}
+.pyg_view .logistics ul li span:nth-child(2) {
+  flex: 4;
+}
+.pyg_view .gd_info_row #item2 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pyg_view .gd_info_row #item2 ul li {
+  padding: 5px;
+  color: #666;
+}
+.pyg_view .gd_info_row #item2 ul li .gi_title {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+  font-size: 14px;
+}
+.pyg_view .gd_info_row #item2 ul li .gi_content {
+  padding: 5px 0;
+  font-size: 13px;
+}
